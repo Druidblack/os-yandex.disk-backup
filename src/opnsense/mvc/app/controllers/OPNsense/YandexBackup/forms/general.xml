@@ -1,0 +1,26 @@
+<form>
+    <field>
+        <id>yandexbackup.general.enabled</id>
+        <label>Enable automatic backups</label>
+        <type>checkbox</type>
+        <help>Enable backup operations. For scheduling add Yandex Disk Backup to System - Settings - Cron.</help>
+    </field>
+    <field>
+        <id>yandexbackup.general.oauth_token</id>
+        <label>Yandex OAuth token</label>
+        <type>password</type>
+        <help>Token with Yandex.Disk permissions cloud_api:disk.read and cloud_api:disk.write. When saved, the field shows masked dots. Leave empty to keep the existing token.</help>
+    </field>
+    <field>
+        <id>yandexbackup.general.remote_folder</id>
+        <label>Remote folder</label>
+        <type>text</type>
+        <help>A path relative to the Yandex.Disk root, e.g. OPNsense-Backups/Home. Folder will be created when backing up.</help>
+    </field>
+    <field>
+        <id>yandexbackup.general.retention</id>
+        <label>Copies to keep</label>
+        <type>text</type>
+        <help>Keep the latest 1-365 copies belonging to this firewall. Older copies go to the Disk trash.</help>
+    </field>
+</form>

@@ -1,0 +1,9 @@
+<acl>
+    <page-system-yandexbackup>
+        <name>System: Yandex Disk Backup</name>
+        <patterns>
+            <pattern>ui/yandexbackup/*</pattern>
+            <pattern>api/yandexbackup/*</pattern>
+        </patterns>
+    </page-system-yandexbackup>
+</acl>

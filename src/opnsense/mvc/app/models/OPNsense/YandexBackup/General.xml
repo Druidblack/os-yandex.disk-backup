@@ -1,0 +1,24 @@
+<model>
+    <mount>//OPNsense/yandexbackup</mount>
+    <description>Yandex.Disk configuration backups</description>
+    <version>0.1.0</version>
+    <items>
+        <general>
+            <enabled type="BooleanField">
+                <Default>0</Default>
+                <Required>Y</Required>
+            </enabled>
+            <oauth_token type="UpdateOnlyTextField"/>
+            <remote_folder type="TextField">
+                <Default>OPNsense-Backups</Default>
+                <Required>Y</Required>
+            </remote_folder>
+            <retention type="IntegerField">
+                <Default>30</Default>
+                <Required>Y</Required>
+                <MinimumValue>1</MinimumValue>
+                <MaximumValue>365</MaximumValue>
+            </retention>
+        </general>
+    </items>
+</model>
