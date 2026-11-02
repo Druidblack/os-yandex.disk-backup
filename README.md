@@ -11,7 +11,15 @@ fetch -o - https://github.com/Druidblack/os-yandex.disk-backup/archive/refs/head
 sh /tmp/os-yandex.disk-backup-master/install.sh
 ````
 
+или через git ```pkg install git```
 
-
-
-
+```
+git clone https://github.com/Druidblack/os-yandex.disk-backup /root/os-yandex.disk-backup
+sh /root/os-yandex.disk-backup/install.sh                                   # install
+cd /root/os-yandex.disk-backup && git pull && sh install.sh                 # update
+```
+ для удаления
+ 
+ ```
+sh uninstall.sh
+```
