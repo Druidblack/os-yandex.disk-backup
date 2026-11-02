@@ -7,11 +7,8 @@
 # Установка
 
 ````
-
 fetch -o - https://github.com/Druidblack/os-yandex.disk-backup/archive/refs/heads/master.tar.gz | tar -xzf - -C /tmp
-sh /tmp/os-yandex.disk-backup-master/tools/install.sh
-
-
+sh /tmp/os-yandex.disk-backup-master/install.sh
 ````
 
 
