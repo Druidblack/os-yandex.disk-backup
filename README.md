@@ -10,7 +10,7 @@
 
 ````
 fetch -o - https://github.com/Druidblack/os-yandex.disk-backup/archive/refs/heads/master.tar.gz | tar -xzf - -C /tmp
-sh /tmp/os-yandex.disk-backup-master/install.sh
+sh /tmp/os-yandex.disk-backup-main/install.sh
 ````
 
 или через git ```pkg install git```
